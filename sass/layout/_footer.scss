@@ -1,0 +1,114 @@
+.footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+
+    :not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.footer__block {
+    margin-right: 70px;
+}
+
+.footer__contacts {
+    margin-top: 20px;
+
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer-address__link {
+    color: #ffffff;
+}
+
+.footer-contact__link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-social__block {
+    margin-right: 93px;
+}
+
+.footer__header {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-social__list {
+    display: flex;
+}
+
+.footer-social__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social__link {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--brand-color);
+    }
+}
+
+.footer-social__icon {
+    fill: #fff;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .footer-social__link:hover &,
+    .footer-social__link:focus & {
+        fill: #fff;
+    }
+}
+
+.subscription__form {
+    display: inline-block;
+}
+
+.subscription__input {
+    width: 358px;
+    height: 50px;
+    padding: 16px;
+    margin-right: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: #2f303a;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        outline: none;
+        border: 1px solid var(--brand-color);
+    }
+}
+
+.subscription__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--hover-color);
+    }
+}
+
+.subscription__icon {
+    margin-left: 10px;
+    fill: #fff;
+}
