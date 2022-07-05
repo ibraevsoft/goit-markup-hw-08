@@ -81,6 +81,29 @@ body {
   }
 }
 
+.section-align {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .section-align {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-align {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-align {
+    width: 1600px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .section {
     padding-top: 60px;
@@ -177,6 +200,16 @@ body {
   }
   .mobile-menu__social-list {
     display: flex;
+  }
+  .mobile-menu__social-item::after {
+    content: '';
+    margin-left: 15px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+  .mobile-menu__social-item:last-child:after {
+    content: '';
+    border: none;
   }
   .mobile-menu__social-item:not(:last-child) {
     margin-right: 20px;
@@ -643,8 +676,6 @@ body {
 }
 
 .hero {
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   background-repeat: no-repeat;
@@ -675,7 +706,6 @@ body {
 
 @media screen and (max-width: 768px) {
   .hero {
-    max-width: 480px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-mob.jpg");
     background-size: cover, 480px;
   }
@@ -689,7 +719,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-tab.jpg");
     background-size: cover, 768px;
   }
@@ -703,7 +732,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg.jpg");
@@ -905,6 +933,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .our-team__item {
+    width: 450px;
+    height: 622px;
+  }
   .our-team__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -926,8 +958,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .our-team__list {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 0;
     margin-left: 0;
   }
@@ -1098,7 +1128,7 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
+  min-width: 450px;
   height: 50px;
   padding: 16px;
   margin-bottom: 20px;

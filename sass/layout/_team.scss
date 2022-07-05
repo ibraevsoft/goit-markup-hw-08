@@ -63,6 +63,9 @@
 
 @media screen and (max-width: 768px) {
   .our-team__item {
+    width: 450px;
+    height: 622px;
+
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -86,8 +89,6 @@
 
 @media screen and (min-width: 1200px) {
   .our-team__list {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 0;
     margin-left: 0;
   }
