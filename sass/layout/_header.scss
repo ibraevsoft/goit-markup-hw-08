@@ -1,13 +1,8 @@
-.header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ececec;
-}
-
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (max-width: 768px) {
@@ -20,6 +15,8 @@
   }
 
   .mobile-menu-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: transparent;
     border: 0;
     padding: 0;
