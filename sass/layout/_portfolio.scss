@@ -35,7 +35,6 @@
 }
 
 .project__link {
-  display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -126,13 +125,23 @@
   }
 
   .project__item {
+    display: flex;
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
 
+  .project__link {
+    display: flex;
+    flex-direction: column;
+  }
+
   .portfolio__text-overlay {
     padding: 49px 24px 77px;
+  }
+
+  .project__block {
+    flex-grow: 1;
   }
 }
 
