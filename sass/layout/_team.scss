@@ -63,8 +63,7 @@
 
 @media screen and (max-width: 768px) {
   .our-team__item {
-    width: 450px;
-    height: 622px;
+    max-width: 450px;
 
     &:not(:last-child) {
       margin-bottom: 30px;
