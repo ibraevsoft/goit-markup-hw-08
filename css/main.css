@@ -178,6 +178,7 @@ body {
   }
   .mobile-menu__social-list {
     display: flex;
+    flex-wrap: wrap;
   }
   .mobile-menu__social-item::after {
     content: "";
@@ -327,10 +328,15 @@ body {
   fill: var(--brand-color);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 420px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
